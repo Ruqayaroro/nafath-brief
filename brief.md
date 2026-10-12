@@ -28,6 +28,7 @@ A star schema organizes data using a central fact table connected directly to di
 
 Resource: https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 ## Misconception in My Track
+A common misconception in software development is that every idempotent HTTP method is also safe. This is incorrect because safe methods do not request changes to server data, while idempotent methods can change data but have the same intended effect when repeated. For example, PUT and DELETE are idempotent but not safe. This distinction matters during 5G outages because applications may retry idempotent requests after communication failures, while non-idempotent requests require extra care to avoid duplicate operations. The correction is supported by RFC 9110, Sections 9.2.1 “Safe Methods” and 9.2.2 “Idempotent Methods.”
 
-
-## Open Questionٍٍ
+## Open Question
+How can emergency response applications safely retry important HTTP requests during 5G network outages without creating duplicate operations or losing critical information?
